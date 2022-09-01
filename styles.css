@@ -10,8 +10,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
 
-}
 
+}
+script>{
+    background-color: rgb(255, 255, 255);
+}
 header {
     text-align: center;
     font-size: larger;
@@ -87,4 +90,24 @@ footer{
     text-align: center;
 font-size: 150%;
 
+}
+.app{
+    font-size: x-large;
+}
+#img1{
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    
+    
+}
+#img2{
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+#img3{
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
 }
