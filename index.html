@@ -6,9 +6,9 @@
 </head>
 
 <body>
-    <script src="app.js" ></script>
+    <script src="app.js"></script>
     <section class="app">
-        
+
     </section>
     <header>
         <h1>My Sightseeing Wishlist</h1>
@@ -16,49 +16,68 @@
     </header>
 
     <main>
-        <section class="upper" >
+        <section class="upper">
             <section class="upper-left">
-                <script> let fav  = 'this one is my favorite :)';
+                <script> let fav = 'this one is my favorite :)';
                     document.write(fav);
-                    </script>
+                </script>
                 <img id="hero"
-                    src=https://images.unsplash.com/photo-1476610182048-b716b8518aae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aWNlbGFuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60>
-                    <input type="button" id='img1' onclick="https:window.location.href= 'https://www.icelandair.com/blog/midnight-sun-in-iceland/';" value="more info!" />
+                    src='https://images.unsplash.com/photo-1476610182048-b716b8518aae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aWNlbGFuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60'>
+                <form action='https://www.icelandair.com/blog/midnight-sun-in-iceland/' method="get" target="_blank">
+                    <button id="img1" type="submit">more info </button> </form>
+                    <!-- <input type="button" id='img1' onclick="window.location.href= 'https://www.icelandair.com/blog/midnight-sun-in-iceland/';" value="more info!" /> -->
                     <script>
 
                     </script>
-                <p>Midnight Sunset in Iceland</p>
-                
+                    <p>Midnight Sunset in Iceland</p>
+
             </section>
 
             <section class="upper-right">
 
                 <img id="vil"
-                    src=https://images.unsplash.com/photo-1631526444307-352557fcfad5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGdpYW50J3MlMjBjYXVzZXdheXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60>
-                    <input type="button" id="img2" onclick="https:window.location.href= 'https://www.thegiantscausewaytour.com/the-giants-causeway-story/';" value="more info!" />
-                <p>The Giant's Causeway in Ireland</p>
+                     src='https://images.unsplash.com/photo-1631526444307-352557fcfad5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGdpYW50J3MlMjBjYXVzZXdheXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60'> 
+                <form action='https://www.thegiantscausewaytour.com/the-giants-causeway-story/' method="get"
+                    target="_blank">
+                    <button id="img2" type="submit">more info </button> </form>
+
+                    <!-- <input type="button" id="img2" onclick= "window.location.href= 'https://www.thegiantscausewaytour.com/the-giants-causeway-story/';" target="_blank" value="more info!" />  -->
+                    <p>The Giant's Causeway in Ireland</p>
 
             </section>
         </section>
 
-        <p class="mid">Hello there my name is Elias Staehle. This site is a collection of my personal choice for the top 3 sights to see.
+        <p class="mid">Hello there my name is Elias Staehle. This site is a collection of my personal choice for the top
+            3 sights to see.
 
         </p>
 
         <section class="lower">
 
             <img id="civ"
-                src=https://images.unsplash.com/photo-1557568737-d2a993cca38a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hcmJsZSUyMGNhdmVzLnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60>
-                <input type="button" id="img3" onclick="https:window.location.href= 'https://www.swoop-patagonia.com/chile/aysen/marblecaves';" value="more info!" />
-            <p>The Marble Caves in Pantagonia</P>
+                src='https://images.unsplash.com/photo-1557568737-d2a993cca38a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hcmJsZSUyMGNhdmVzLnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60'>
+            <form action='https://www.swoop-patagonia.com/chile/aysen/marblecaves' method="get" target="_blank">
+                <button id="img3" type="submit">more info </button></form>
+                <!-- <input type="button" id="img3" onclick="window.location.href= 'https://www.swoop-patagonia.com/chile/aysen/marblecaves';" value="more info!" /> -->
+                <p>The Marble Caves in Pantagonia</P>
 
+        </section>
+        <section class="buttons">
+            <button id="quiz" onclick=quizQuestion() value="QUIZ!!!">
+                QUIZ
+            </button>
+        </section>
+        <section class="ratingPic">
+            <script>
+                displayRating();
+            </script>
         </section>
 
         <nav>
             <ul>
-                <li><a href=https://zusolaris.github.io/hello-world />Zoe Gonzalez</a></li>
-                <li><a href=https://edstaehle.github.io/hello-world />Elias Staehle</a></li>
-                <li><a href=https://dennis-nichols.github.io/102-labs />Dennis Nichols</a></li>
+                <li><a href='https://zusolaris.github.io/hello-world'>Zoe Gonzalez</a></li>
+                <li><a href='https://edstaehle.github.io/hello-world'>Elias Staehle</a></li>
+                <li><a href='https://dennis-nichols.github.io/102-labs'>Dennis Nichols</a></li>
             </ul>
         </nav>
 
