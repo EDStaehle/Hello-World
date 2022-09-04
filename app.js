@@ -9,7 +9,7 @@ let message;
 function newGreetings() {
     let usersName = prompt('what is your name?');
     if (usersName == 'Elias') {
-        message = 'hello there';
+        message = 'hello there ' + usersName;
     }
     else {
         let stranger = prompt('hi ' + usersName + ' do you like to travel?');
@@ -23,6 +23,7 @@ function newGreetings() {
     }
 
     document.write(message);
+    return usersName;
 }
 function quizQuestion() {
     let userAns = prompt('Where is the Midnight Sunset located?')
@@ -44,10 +45,10 @@ function quizQuestion() {
     }
 
     let userAns3 = prompt('Where are the Marble caves?')
-    while (userAns3 != 'Pantagonia') {
+    while (userAns3 != 'Patagonia') {
         userAns3 = prompt('wrong');
 
-    } if (userAns3 === 'Pantagonia') {
+    } if (userAns3 === 'Patagonia') {
         alert('yes! Good Job :)');
     }
 }
@@ -55,7 +56,7 @@ function displayRating() {
     let array = ['1,','2','3','4','5','6','7','8','9','10'];
     let imgoutput = '';
     let rating = prompt('how would you rate your experience here? 1-10 :)');
-    if(rating < 10 ){
+    if(rating <= 10 && rating >=1){
         
         console.log(array);
     for(let i = 0; i < rating; i++){
@@ -64,11 +65,16 @@ function displayRating() {
     }
 }
 else{
-    alert('not a choice')
-}
-    document.write(imgoutput);
+    alert('that was not a choice');
+    return displayRating();
+    
    
 }
+    document.write(imgoutput);
+    
+   
+}
+
 
 
 
